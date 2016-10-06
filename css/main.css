@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
+    max-width: 1000px;
     background-color: #f6f6f6;
 }
 footer ul {
@@ -38,8 +39,16 @@ p {
     color: #333;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    #border-top: 1px solid #d5d5d5;
+    font-size: 1.5em;
+    display: flex;
+}
+footer div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
 }
 .img-circle {
     border-radius: 50%;
@@ -58,10 +67,14 @@ footer {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
+  border-radius: 15px;
 }
-#about {
+#about, #email {
   margin-right: 10px;
 }
-#education {
+#education, #resume {
   margin-left: 10px;
+}
+#github {
+  margin: 0px 10px 0px 10px;
 }
