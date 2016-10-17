@@ -4,16 +4,20 @@ body {
     max-width: 1000px;
     background-color: #f6f6f6;
 }
-footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+h1, h3, ul, p {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h1 {
+    font-size: 3em;
     text-align: center;
 }
-footer ul li {
-    display: inline;
-    margin-right: 20px;
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #333;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -22,25 +26,7 @@ a:hover {
     text-decoration: underline;
 }
 
-h1, h2, h3 {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    text-align: center;
-}
-h1 {
-    font-size: 3em;
-}
-h2 {
-    font-size: 2em;
-}
-p {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 1em;
-    line-height: 1.4em;
-    color: #333;
-}
-
 footer {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.5em;
     display: flex;
 }
