@@ -40,6 +40,7 @@ p {
 }
 
 footer {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.5em;
     display: flex;
 }
@@ -70,7 +71,6 @@ footer div {
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 15px;
-  font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 #about, #email {
   margin-right: 10px;
