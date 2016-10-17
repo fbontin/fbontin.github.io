@@ -5,7 +5,7 @@ body {
     background-color: #f6f6f6;
 }
 
-h1, h3, ul, p {
+h1, h3, ul, p , a{
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 h1 {
