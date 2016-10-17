@@ -34,6 +34,7 @@ h2 {
     font-size: 2em;
 }
 p {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1em;
     line-height: 1.4em;
     color: #333;
@@ -42,6 +43,7 @@ footer {
     #border-top: 1px solid #d5d5d5;
     font-size: 1.5em;
     display: flex;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 footer div {
     flex: 1;
