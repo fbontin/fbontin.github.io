@@ -14,11 +14,32 @@ body {
 .menu {
     text-align: right;
 }
-img {
-    max-width: 50px;
-    height: 50px;
-    border-radius: 50%;
 .menu-item {
     font-family: 'Arvo', serif;
 }
+.menu-bar {
+    border-bottom: 2px solid black;
+}
+
+.home {
+    padding: 8px;
+    text-align: center;
+}
+.face {
+    max-width: 200px;
+    height: 200px;
+    /*border-radius: 2%;*/
+    margin-top: 10%;
+    border: 2px solid black;
+}
+.home .name {
+    font-size: 30px;
+}
+.icons {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+a {
+    color: black;
 }
