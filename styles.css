@@ -1,10 +1,15 @@
+body {
+    font-family: 'Arvo', serif;
+}
 .body {
     max-width: 500px;
     margin-top: 10px; 
     margin: auto;
 }
+
 .name {
     margin: 8px;
+    font-family: 'Arvo', serif;
 }
 .menu {
     text-align: right;
@@ -13,4 +18,7 @@ img {
     max-width: 50px;
     height: 50px;
     border-radius: 50%;
+.menu-item {
+    font-family: 'Arvo', serif;
+}
 }
