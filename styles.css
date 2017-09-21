@@ -1,0 +1,16 @@
+.body {
+    max-width: 500px;
+    margin-top: 10px; 
+    margin: auto;
+}
+.name {
+    margin: 8px;
+}
+.menu {
+    text-align: right;
+}
+img {
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
