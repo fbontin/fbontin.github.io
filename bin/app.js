@@ -1348,6 +1348,7 @@ var Body = __webpack_require__(6)
 var Menu = __webpack_require__(7)
 var Home = __webpack_require__(8)
 var About = __webpack_require__(9)
+var Timeline = __webpack_require__(10)
 
 m.route(document.body, "/", {
     "/": {
@@ -1362,7 +1363,9 @@ m.route(document.body, "/", {
         render: function() {
             return m(Body, [
                 m(Menu), 
-                m(About)
+                m(About, 
+                    m(Timeline)
+                )
             ])
         }
     }
@@ -1890,21 +1893,72 @@ module.exports = {
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-//basically cv
-
 var m = __webpack_require__(0)
 
 module.exports = {
     view: function(vnode) {
         return m(".about", [
             m("p", "Here are some things I have done:"),
-            m("ul.timeline", [
-                m("li.timeline-item", "Worked"),
-                m("li.timeline-item", "Studied"),
-            ])
+            m("ul.timeline", 
+                m("section", vnode.children)
+            )
         ])
     }
 }
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var m = __webpack_require__(0)
+var items = __webpack_require__(11)
+
+items = items.map(function(item) {
+    return m(".item", [
+        m(".title", item.title),
+        m(".text", item.text),
+        m(".date", item.startDate + " - " + item.endDate),
+    ])
+})
+
+module.exports = {
+    view: function(vnode) {
+        return m(".timeline", items)
+    }
+}
+
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+module.exports = [
+    {
+        "title": "Valtech",
+        "text": "System developer.",
+        "startDate": "February 2017",
+        "endDate": "Current",
+    },
+    {
+        "title": "Master Thesis",
+        "text": "Developed a prototype for participatory city planning using Unity.",
+        "startDate": "May 2017",
+        "endDate": "October 2017",
+    },
+    {
+        "title": "Emmaboda Festival",
+        "text": "One part of a two-man team that developed the festival's first iPhone app.",
+        "startDate": "November 2016",
+        "endDate": "May 2017",
+    },
+    {
+        "title": "Exchange studies",
+        "text": "Graz University of Technology",
+        "startDate": "February 2016",
+        "endDate": "July 2016",
+    },
+]
 
 /***/ })
 /******/ ]);
