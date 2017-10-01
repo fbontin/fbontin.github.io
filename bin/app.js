@@ -1899,9 +1899,7 @@ module.exports = {
     view: function(vnode) {
         return m(".about", [
             m("p", "Here are some things I have done:"),
-            m("ul.timeline", 
-                m("section", vnode.children)
-            )
+            m("section", vnode.children),
         ])
     }
 }
@@ -1936,13 +1934,13 @@ module.exports = {
 module.exports = [
     {
         "title": "Valtech",
-        "text": "System developer.",
+        "text": "Currently working as a system developer at Valtechs Malmö office.",
         "startDate": "February 2017",
         "endDate": "Current",
     },
     {
         "title": "Master Thesis",
-        "text": "Developed a prototype for participatory city planning using Unity.",
+        "text": "Developed a prototype for participatory urban planning using Unity.",
         "startDate": "May 2017",
         "endDate": "October 2017",
     },
@@ -1954,7 +1952,7 @@ module.exports = [
     },
     {
         "title": "Exchange studies",
-        "text": "Graz University of Technology",
+        "text": "Spent a semester at Graz University of Technology, learning and traveling.",
         "startDate": "February 2016",
         "endDate": "July 2016",
     },
