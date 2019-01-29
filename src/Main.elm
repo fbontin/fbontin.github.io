@@ -190,8 +190,8 @@ home model =
 -- ABOUT
 
 
-timelineEvent : Model -> Experience -> Html Msg
-timelineEvent model event =
+experience : Model -> Experience -> Html Msg
+experience model event =
     div
         [ class "item" ]
         [ div [ class "title" ] [ text event.title ]
@@ -204,7 +204,7 @@ timeline : List Experience -> Model -> Html Msg
 timeline events model =
     div
         [ class "timeline" ]
-        (List.map (timelineEvent model) events)
+        (List.map (experience model) events)
 
 
 about : Model -> Html Msg
