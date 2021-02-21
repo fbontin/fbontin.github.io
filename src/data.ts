@@ -1,8 +1,7 @@
 export const getMe = () => ({
   name: "Filip Bontin",
   description:
-    "Dedicated software engineer with a passion for programming and UX-design. When I'm not in front of the computer, I hang out with friends, travel or enjoy nature. If the weather allows I'll probably try to get some longboarding in there too.",
-  email: "fbontin@gmail.com",
+    "Dedicated software engineer with a passion for programming, sustainability and learning new things. When I'm not in front of the computer, I hang out with friends, enjoy nature or paint with watercolors.",
   github: "https://github.com/fbontin/",
   linkedin: "https://linkedin.com/in/fbontin",
 });
@@ -11,7 +10,7 @@ export const getExperiences = () => [
   {
     title: "Jayway",
     text:
-      "Currently working as a full-stack developer at Jayway Malmö. Working mostly with AWS and Node but also with React.",
+      "Currently working as a full stack developer at Jayway. Have been working with React, TypeScript and AWS to name a few. I'm also competence lead for part of the Malmö office.",
     startDate: "Apr 2018",
     endDate: "Current",
   },
@@ -36,4 +35,9 @@ export const getExperiences = () => [
     startDate: "Nov 2016",
     endDate: "May 2017",
   },
+];
+
+export const getSustainability = () => [
+  `Sustainability is a big part of my life, so I've also incorporated it into this website.`,
+  `One important part when building sustainable web sites is keeping the size of the page down. This site is built using Svelte, making it quite compact. The image above is also made as small as possible, by using dithering.`,
 ];

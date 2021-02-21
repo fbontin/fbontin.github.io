@@ -1,32 +1,30 @@
 <script lang="ts">
-  import Icon from "./Icon.svelte";
+  import Link from "./Link.svelte";
   import { getMe } from "./data";
   const me = getMe();
 </script>
 
-<div class="description">
-  <img class="face" src="../face.png" alt="Filip in sunglasses" />
-  <h3 class="name">{me.name}</h3>
+<div>
+  <img src="../face.png" alt="Filip in sunglasses" />
+  <h3>{me.name}</h3>
   <p>{me.description}</p>
 
-  <div>
-    <Icon url={me.github} />
-    <Icon url={me.linkedin} />
-  </div>
+  <p>
+    You can find me at <Link url={me.github} name="github" /> or <Link
+      url={me.linkedin}
+      name="linkedin"
+    />.
+  </p>
 </div>
 
 <style>
-  .face {
-    max-width: 200px;
-    height: 200px;
-    margin-top: 10%;
-    border: 2px solid black;
-  }
-  .name {
-    margin: 8px;
-  }
-  .description {
-    padding: 8px;
+  div {
     text-align: center;
+  }
+  img {
+    max-width: 12.5em;
+    height: 12.5em;
+    margin-top: 4em;
+    border: 0.125em solid black;
   }
 </style>

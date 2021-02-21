@@ -7,7 +7,9 @@ html, body {
 body {
 	color: #333;
 	margin: 0;
-	padding: 8px;
 	box-sizing: border-box;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: monospace, serif;
+	background:
+		repeat fixed url(../endless-clouds.svg),
+		#a5d3b0;
 }
