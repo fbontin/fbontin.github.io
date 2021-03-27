@@ -2,7 +2,7 @@
 
 My personal website, built using [Svelte](https://svelte.dev/). Even though this website could be build entirely by just HTML and CSS, it's not as fun as using a JavaScript framework for it.
 
-This site can be found at [fbontin.github.io](https://fbontin.github.io).
+This site can be found at [bontin.dev](https://bontin.dev).
 
 ## Sustainability
 
