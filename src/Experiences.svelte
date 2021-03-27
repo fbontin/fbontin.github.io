@@ -24,7 +24,7 @@
     border: 0.125em solid black;
     margin-top: 1em;
     padding: 0.5em;
-    background-color: #fff;
+    background-color: var(--light-yellow);
     list-style-type: none;
   }
 </style>

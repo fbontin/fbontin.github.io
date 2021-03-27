@@ -4,7 +4,7 @@
 
 <div>
   {#each getSustainability() as paragraph}
-    <p>{paragraph}</p>
+    <p>{@html paragraph}</p>
   {/each}
 </div>
 
@@ -13,7 +13,7 @@
     border: 0.125em solid black;
     padding: 0.5em;
     text-align: left;
-    background-color: #fff;
+    background-color: var(--light-yellow);
     list-style-type: none;
   }
 </style>
