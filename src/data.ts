@@ -10,7 +10,7 @@ export const getExperiences = () => [
   {
     title: "Jayway",
     text:
-      "Currently working as a full stack developer at Jayway. Have been working with React, TypeScript and AWS to name a few. I'm also competence lead for part of the Malmö office.",
+      "Currently working as a frontend developer at Jayway. I have been working with React, TypeScript and Azure amongst others. I'm also competence lead for part of the Malmö office.",
     startDate: "Apr 2018",
     endDate: "Current",
   },
@@ -38,6 +38,6 @@ export const getExperiences = () => [
 ];
 
 export const getSustainability = () => [
-  `Sustainability is a big part of my life, so I've also incorporated it into this website.`,
-  `One important part when building sustainable web sites is keeping the size of the page down. This site is built using Svelte, making it quite compact. The image above is also made as small as possible, by using dithering.`,
+  `Sustainability is a big part of my life, so I've also incorporated it into this website, by trying to keep the size of the website as small as possible.`,
+  `Read more about sustainability regarding this website in the <a href="https://github.com/fbontin/fbontin.github.io">github repo</a>.`,
 ];
