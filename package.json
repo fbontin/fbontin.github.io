@@ -4,6 +4,7 @@
   "scripts": {
     "start": "echo 'TODO'"
   },
-  "devDependencies": {
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }
