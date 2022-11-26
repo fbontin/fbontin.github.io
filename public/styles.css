@@ -2,23 +2,19 @@ body {
   --text-color: white;
   --window-background: #1f2335;
   --window-border-radius: 16px;
+  --font-size: 20px;
 
-  background-color: hotpink;
+  background-color: #0d3e32;
   font-family: "Courier New", Courier, monospace;
   color: var(--text-color);
 }
 
+/* Window */
 .dot {
   height: 12px;
   width: 12px;
   background-color: var(--text-color);
   border-radius: 50%;
-  display: inline-block;
-}
-
-h1 {
-  margin-left: 1rem;
-  font-size: 1rem;
   display: inline-block;
 }
 
@@ -33,24 +29,68 @@ h1 {
   border: 2px solid var(--text-color);
   border-radius: var(--window-border-radius);
   background-color: var(--window-background);
-  max-width: 60rem;
-  margin: 0 auto;
+  max-width: 50rem;
+  margin: 2rem auto;
 }
 
-.window > * {
-  padding: 10px;
+/* Terminal content */
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: var(--font-size);
+  font-weight: 100;
+  margin-top: 0;
+}
+
+h1::before {
+  content: ">";
+  color: lime;
+}
+
+.typing {
+  width: 22ch;
+  animation: typing 2s steps(22);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.output {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: var(--font-size);
+  margin: 1rem 0 0 0;
 }
 
-h2::before {
-  content: "> ";
+.summary {
+  display: flex;
 }
 
 p {
-  font-size: 1rem;
+  font-size: var(--font-size);
+  margin: 0;
 }
 
 a {
@@ -58,5 +98,30 @@ a {
 }
 
 img {
-  max-width: 16rem;
+  max-width: 10rem;
+  border-radius: 5px;
+}
+
+.experience {
+  margin-bottom: 1rem;
+}
+
+.experience > span::after {
+  content: "\A";
+  white-space: pre;
+}
+
+@media (max-width: 540px) {
+  img {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .typing {
+    animation: none;
+  }
+  .output {
+    animation: none;
+  }
 }
