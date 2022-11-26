@@ -22,6 +22,4 @@ Switching from hosting on Github to another provider would lower carbon emission
 
 ## How to run this?
 
-1. Run `yarn`
-2. Run `yarn dev`
-3. Go to `localhost:5000`
+Run `npm start`
