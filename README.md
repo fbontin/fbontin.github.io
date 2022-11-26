@@ -1,6 +1,6 @@
 # fbontin.github.io
 
-My personal website, built using [Svelte](https://svelte.dev/). Even though this website could be build entirely by just HTML and CSS, it's not as fun as using a JavaScript framework for it.
+My personal website, built using just HTML and CSS. This makes it as small as possible, which reduces how much data is sent.
 
 This site can be found at [bontin.dev](https://bontin.dev).
 
@@ -8,9 +8,8 @@ This site can be found at [bontin.dev](https://bontin.dev).
 
 One important part when building sustainable web sites is keeping the size of the page down. For this site I've taken a few steps to ensure that:
 
-- It's built it using Svelte, which becomes very compact compared to most other JavaScript frameworks.
+- It's built it using just HTML and CSS, which becomes very compact compared to using a JavaScript framework.
 - The image of me made as small as possible by using [dithering](https://doodad.dev/dither-me-this/).
-- The background is made using only CSS, which also keeps the size down.
 
 ### Why does it matter?
 
@@ -22,6 +21,4 @@ Switching from hosting on Github to another provider would lower carbon emission
 
 ## How to run this?
 
-1. Run `yarn`
-2. Run `yarn dev`
-3. Go to `localhost:5000`
+Run `npm start`

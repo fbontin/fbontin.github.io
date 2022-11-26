@@ -3,14 +3,74 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-
+    <!-- stop trying to fetch favicon -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Filip Bontin</title>
-
-    <link rel="stylesheet" href="/global.css" />
-    <link rel="stylesheet" href="/build/bundle.css" />
-
-    <script defer src="/build/bundle.js"></script>
   </head>
 
-  <body></body>
+  <body>
+    <div class="window">
+      <div class="top">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <main>
+        <h1 class="typing">./filip_bontin.sh</h1>
+        <div class="output">
+          <section>
+            <h2>Summary</h2>
+            <div class="summary">
+              <p>
+                Dedicated software engineer with a passion for programming,
+                sustainability and learning new things. When I'm not in front of
+                the computer, I hang out with friends, enjoy nature or paint
+                with watercolors.
+              </p>
+              <img src="./face.png" alt="Filips face, grayscale, dithered" />
+            </div>
+          </section>
+          <section>
+            <h2>Sustainability 🌱</h2>
+            <p>
+              Sustainability is a big part of my life, so I've also incorporated
+              it into this website, by trying to keep the size of the website as
+              small as possible. Read more about sustainability regarding this
+              website in the
+              <a href="https://github.com/fbontin/fbontin.github.io"
+                >github repo</a
+              >.
+            </p>
+          </section>
+          <section>
+            <h2>Experiences 🧑‍💻</h2>
+            <p class="experience">
+              <span>Devoteam: Apr 2018 - Current </span>
+              I have worked with a few different projects, mostly focused on
+              frontend. We have used React, TypeScript, Web Components and Azure
+              amongst others. I've also been involved with organizing competence
+              days.
+            </p>
+            <p class="experience">
+              <span>Valtech: Feb 2017 - Mar 2018 </span>
+              Fullstack developer using React, .NET and other at Valtech's Malmö
+              office.
+            </p>
+            <p class="experience">
+              <span>Master thesis: May 2017 - Oct 2017 </span>
+              Developed a prototype for participatory urban planning using Unity
+              and a 75" touch screen.
+            </p>
+            <p class="experience">
+              <span>Emmaboda Festival: Nov 2016 - May 2017 </span>
+              One part of a two-man team that developed the festival's first
+              iPhone app using Swift.
+            </p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
