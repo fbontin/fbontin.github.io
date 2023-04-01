@@ -1,6 +1,7 @@
 body {
   --text-color: white;
   --window-background: #1f2335;
+  --text-highlight-color: #ffb463;
   --window-border-radius: 16px;
   --font-size: 20px;
 
@@ -104,6 +105,14 @@ img {
 
 .experience {
   margin-bottom: 1rem;
+}
+
+.experience > span {
+  font-style: italic;
+  color: var(--text-highlight-color);
+}
+.experience > span::before {
+  content: "> ";
 }
 
 .experience > span::after {
